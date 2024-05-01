@@ -11,7 +11,6 @@ import java.util.List;
 
 @Controller
 public class MentorController {
-
     @RequestMapping("/list")
     public String showTable(Model model){
 
@@ -21,7 +20,6 @@ public class MentorController {
         mentorList.add(new Mentor("Ammy","Bryan",25, Gender.FEMALE));
 
         model.addAttribute("mentors",mentorList);
-
         return "mentor/mentor-list";
 
     }

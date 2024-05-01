@@ -16,6 +16,7 @@ public class CarController {
         model.addAttribute("make",make);
 
         return "car/car-info";
+
     }
 
     //localhost:8080/info2 (KIA)
