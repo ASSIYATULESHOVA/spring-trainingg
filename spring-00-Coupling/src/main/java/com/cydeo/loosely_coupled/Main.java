@@ -8,7 +8,6 @@ import com.cydeo.loosely_coupled.motherboardfactory.AsusMotherboard;
 import com.cydeo.loosely_coupled.motherboardfactory.Motherboard;
 
 
-
 public class Main {
     public static void main(String[] args) {
 
@@ -19,7 +18,6 @@ public class Main {
         PC myPc = new PC(theCase,theMonitor,theMotherboard);
 
         myPc.powerUp();
-
 
     }
 }
