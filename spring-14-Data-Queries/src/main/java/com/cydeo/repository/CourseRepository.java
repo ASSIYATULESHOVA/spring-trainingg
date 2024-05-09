@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public interface CourseRepository extends JpaRepository<Course,Long > {
 
-    //Find all courses by category
+    //Find all courses
     List<Course> findByCategory(String category);
 
     //Find all courses by category and order the entities by name
