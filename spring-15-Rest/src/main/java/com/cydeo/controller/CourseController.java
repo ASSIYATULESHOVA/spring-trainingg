@@ -18,6 +18,7 @@ public class CourseController {
     }
 
     @GetMapping
+    @ResponseBody
     public List<CourseDTO> getAllCourses(){
 
         return courseService.getCourses();
