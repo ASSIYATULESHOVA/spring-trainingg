@@ -1,8 +1,9 @@
 
 package com.cydeo.dto;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -14,11 +15,11 @@ import javax.annotation.processing.Generated;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "street",
-        "suite",
-        "city",
-        "zipcode",
-        "geo"
+    "street",
+    "suite",
+    "city",
+    "zipcode",
+    "geo"
 })
 @Generated("jsonschema2pojo")
 public class Address {
@@ -34,7 +35,7 @@ public class Address {
     @JsonProperty("geo")
     private Geo geo;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
     @JsonProperty("street")
     public String getStreet() {

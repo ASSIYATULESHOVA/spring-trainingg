@@ -3,7 +3,6 @@ package com.cydeo.dto;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -15,37 +14,50 @@ import javax.annotation.processing.Generated;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "lat",
-    "lng"
+    "name",
+    "catchPhrase",
+    "bs"
 })
 @Generated("jsonschema2pojo")
-public class Geo {
+public class Company {
 
-    @JsonProperty("lat")
-    private String lat;
-    @JsonProperty("lng")
-    private String lng;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("catchPhrase")
+    private String catchPhrase;
+    @JsonProperty("bs")
+    private String bs;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    @JsonProperty("lat")
-    public String getLat() {
-        return lat;
+    @JsonProperty("name")
+    public String getName() {
+        return name;
     }
 
-    @JsonProperty("lat")
-    public void setLat(String lat) {
-        this.lat = lat;
+    @JsonProperty("name")
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @JsonProperty("lng")
-    public String getLng() {
-        return lng;
+    @JsonProperty("catchPhrase")
+    public String getCatchPhrase() {
+        return catchPhrase;
     }
 
-    @JsonProperty("lng")
-    public void setLng(String lng) {
-        this.lng = lng;
+    @JsonProperty("catchPhrase")
+    public void setCatchPhrase(String catchPhrase) {
+        this.catchPhrase = catchPhrase;
+    }
+
+    @JsonProperty("bs")
+    public String getBs() {
+        return bs;
+    }
+
+    @JsonProperty("bs")
+    public void setBs(String bs) {
+        this.bs = bs;
     }
 
     @JsonAnyGetter
