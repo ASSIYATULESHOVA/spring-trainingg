@@ -21,7 +21,6 @@ public class Spring17RestConsumingApisApplication {
         return new RestTemplate();
     }
 
-
     @Bean
     public ModelMapper mapper() {
         return new ModelMapper();
