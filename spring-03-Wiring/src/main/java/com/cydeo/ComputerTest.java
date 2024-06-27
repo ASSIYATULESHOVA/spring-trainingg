@@ -9,7 +9,6 @@ public class ComputerTest {
 
     public static void main(String[] args) {
 
-
         ApplicationContext container = new AnnotationConfigApplicationContext(PcConfig.class);
 
         Case theCase = container.getBean(Case.class);
