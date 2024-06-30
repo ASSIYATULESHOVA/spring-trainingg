@@ -19,6 +19,7 @@ public abstract class Case {
         this.powerSupply = powerSupply;
     }
 
+
     public abstract void pressPowerButton();
 
 }
